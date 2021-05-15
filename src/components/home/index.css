@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+
+} 
+
+.Container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+}
+
+.Left,
+.Middle,
+.Right {
+    overflow: auto;
+    height: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.Left::-webkit-scrollbar,
+.Middle::-webkit-scrollbar,
+.Right::-webkit-scrollbar {
+    display: none;
+}
+
+.Left {
+    width: 33%;
+}
+
+.Middle {
+  width: 33%;
+}
+
+.Right {
+    width: 33%;
+}
+
+
+@media only screen and (max-width: 425px){
+    .hiddenBlock{
+        display: none;
+    }
+
+
+ }
