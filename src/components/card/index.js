@@ -12,7 +12,6 @@ import {
     Poster8,
     Poster9,
 } from '../../constants/images'
-import './index.css'
 
 const Card = (props) => {
 
